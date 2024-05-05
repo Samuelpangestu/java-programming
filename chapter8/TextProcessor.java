@@ -7,6 +7,7 @@ public class TextProcessor {
         countWords("I love Test Automation University");
         reverseString("Hello TAU!");
         addSpaces("HeyWorld!It'sMeAngie");
+        myName("Samuel Pangestu G Tobing");
     }
 
     /**
@@ -21,8 +22,20 @@ public class TextProcessor {
         String message = String.format("Your text contains %d words:", numberOfWords);
         System.out.println(message);
 
-        for(int i=0; i<numberOfWords; i++){
-            System.out.println(words[i]);
+        for (String word : words) {
+            System.out.println(word);
+        }
+    }
+
+    public static void myName(String myName){
+        var names = myName.split(" ");
+        int numberOfNames = names.length;
+
+        String message = String.format("Your name contains %d words:", numberOfNames);
+        System.out.println(message);
+
+        for(String name : names){
+            System.out.println(name);
         }
     }
 
