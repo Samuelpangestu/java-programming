@@ -10,6 +10,10 @@ public class Person {
         return name;
     }
 
+    public Person(String name){
+        System.out.println("In Person 2nd constructor. Name is set");
+    }
+
     public void setName(String name) {
         this.name = name;
     }
